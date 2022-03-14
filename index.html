@@ -1,0 +1,76 @@
+
+
+
+<!DOCTYPE html>
+<html><head>
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width">
+
+<title>Pig game</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body >
+    <!-- body starting -->
+    <!-- game area starting that is w-75 and holds 2div -->
+    <div class="main-game-area d-flex w-75 m-auto mt-5 position-relative">
+      <!-- first game area -->
+      <div class="game-area__1 w-50 game-area x ">
+        <!-- this is  the player 1 area w-50% name,score ,rolled dice-->
+        <h2 id="player1-name ">Player 1</h2>
+        <h1 id="player1-dicescore" class="dicescore">0</h1>
+        <div class="player-scorearea d-flex flex-column  align-items-center">
+           <!-- a small score area -->
+           <h4 class="player1-currentname">Current</h4>
+           <h3 id="player1-currentscore">0</h3>
+        </div>
+
+      </div>
+      <!-- the in bettween center area absolute -->
+      <div class="game-function-area position-absolute h-100 w-100">
+        <button id="newgame" class="btn  rounded-pill">🔄 New Game</button>
+        <!-- img area  -->
+        <div class="dice--img hidden"><img src="https://pig-game-v2.netlify.app/dice-4.png" alt="" id="dice-img"></div>
+        <div class="btn-wrap d-flex flex-column gap-4 ">
+          <button id="roll-dice" class="btn  rounded-pill">🎲 Roll Dice </button>
+          <button id="Hold" class="btn  rounded-pill">📥 Hold</button>
+        </div>
+
+
+      </div>
+
+      <!-- second game area of player 2  -->
+      <div class="game-area__2 x w-50 game-area">
+        <!-- this is  the player 1 area w-50% name,score ,rolled dice-->
+        <h2 id="player2-name">Player 2</h2>
+        <h1 id="player2-dicescore" class="dicescore">0</h1>
+        <div class="player-scorearea d-flex flex-column  align-items-center">
+           <!-- a small score area -->
+           <h4 class="player2-currentname">Current</h4>
+           <h3 id="player2-currentscore">0</h3>
+        </div>
+
+      </div>
+      
+    </div>
+
+    
+    
+    
+
+<!-- body area ends -->
+<!-- jvascript area -->
+<script src="structure.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- if (plyrmainscore < plyrcscore) {
+  plyrmainscore = plyrcscore
+  document.getElementById(`player${currentplayer}-dicescore`).textContent = plyrmainscore
+
+
+} -->

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image:linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    height: 100vh;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.x {
+    /* border: 2px solid black; */
+}
+.game-area {
+
+    display: grid;
+    place-items: center;
+    height: 80vh;
+}
+.main-game-area {
+    box-shadow: 0 3rem 5rem rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+.dicescore {
+    color: red;
+}
+.game-function-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.game-area__1 {
+    /* background: #ffffff66; */
+
+}
+.game-function-area button {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.player-scorearea {
+    background-color: #c7365f;
+    padding: 0.5rem 2.5rem;
+    border-radius: 20px;
+    color: #fff;
+}
+.dice--img {
+    width: 100px;
+}
+.hidden {
+    visibility: hidden;
+}
+@media (max-width:425px){
+    .main-game-area {
+        width: 99% !important;
+        margin-bottom: 100px;
+        
+        
+    }
+    body{
+        background-color: white !important;
+        position: relative;
+        height: auto !important;
+        height: 120vh !important;
+    }
+    .game-function-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        bottom: -80px;
+        gap: 40px;
+        overflow: visible !important;
+        
+
+    }
+    .main-game-area {
+        overflow: visible !important;
+
+    }
+    .btn-wrap {
+        flex-direction: row !important;
+    }
+    .dice--img {
+        order: -1;
+        position: relative;
+        top: -90px;
+        
+    }
+    
+}
